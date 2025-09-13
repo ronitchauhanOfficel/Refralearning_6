@@ -65,7 +65,7 @@ services:
       -   
 
 Error.log
-
+[]
 
 Index.php
 <?php
