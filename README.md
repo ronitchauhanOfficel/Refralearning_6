@@ -1,6 +1,6 @@
 # Refralearning_6
 
-(1)...htacsess
+.htacsess
 <IfModule mod_rewrite.c>
     RewriteEngine On
     RewriteCond %{REQUEST_FILENAME} !-f
@@ -8,7 +8,7 @@
     RewriteRule ^(.*)$ index.php [QSA,L]
 </IfModule>
 
-(2)..Dockerfile
+.Dockerfile
 # Use official PHP Apache image
 FROM php:8.1-apache
 
@@ -42,14 +42,14 @@ EXPOSE 80
 # Start Apache
 CMD ["apache2-foreground"]
 
-(3)..Composer.json
+Composer.json
 {
     "require": {
         "php": "^8.1"
     }
 }
 
-(4)..Docker-compose.yml
+Docker-compose.yml
 version: '3.8'
 
 services:
@@ -64,10 +64,10 @@ services:
       - ./:/var/www/html
       -   
 
-(5)..Error.log
+Error.log
 
 
-(6)..Index.php
+Index.php
 <?php
 // Bot configuration
 define('BOT_TOKEN', getenv('BOT_TOKEN'));
@@ -264,5 +264,5 @@ if ($update) {
 }
 ?>
 
-(7)..Users.json
+Users.json
 []
